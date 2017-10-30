@@ -11,11 +11,11 @@ and open the template in the editor.
             
              otraVariable = "";// si no tiene var delante, es de instancia (aunque este dentro de un metodo)
             function sustituye () {
-                var objetoFecha = new Date();
-                var hoy = objetoFecha.getDay();
+                var objetoFecha = new Date().getDay();
+              //  var hoy = objetoFecha.getDay();
                 var diaDeLaSemana; 
                 
-                switch(hoy){
+                switch(objetoFecha){
                     case 0 : diaDeLaSemana = "DOMINGO"; break;
                     case 1 : diaDeLaSemana = "LUNES"; break;
                     case 2 : diaDeLaSemana = "MARTES"; break;
